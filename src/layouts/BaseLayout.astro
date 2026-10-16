@@ -9,8 +9,6 @@ const { pageTitle } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- TODO: put the page title in here -->
     <title>Fake Store - {pageTitle}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,13 +20,10 @@ const { pageTitle } = Astro.props;
   </head>
 
   <body>
-    <!-- TODO: render the Header component here -->
-    <header>
-      <h1><a href="/">Fake Astro Store</a></h1>
-    </header>
+    <Header />
     <main>
-      <!-- TODO: render the <slot /> here -->
-      <slot/>
+      <slot />
     </main>
   </body>
+
 </html>
