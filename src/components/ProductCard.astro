@@ -116,9 +116,6 @@ const { product } = Astro.props;
   }
 </style>
 
-<!-- TODO: replace every placeholder below with data from `product`.
-     TODO: add the class "popular" to the <article>, but only when the
-           rating is higher than 4.5 -->
 <article class:list={{ popular: product.rating.rate > 4.5 }}>
   <img src={product.image} alt={product.title} width="300" height="400" />
 
